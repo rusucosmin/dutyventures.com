@@ -24,7 +24,7 @@
 .u-section-1 .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
 .u-section-1 .u-container-layout-2 {padding-left: 10px; padding-right: 10px} }
 
-@media (max-width: 575px){ .u-section-1 .u-sheet-1 {min-height: 580px}
+@media (max-width: 575px){ .u-section-1 .u-sheet-1 {min-height: 100vh}
 .u-section-1 .u-layout-wrap-1 {margin-top: 160px; margin-right: initial; margin-left: initial}
 .u-section-1 .u-text-1 {font-size: 2.25rem; margin-right: 0}
 .u-section-1 .u-text-2 {font-family: Poppins}

@@ -30507,7 +30507,7 @@ a.u-link.u-text-hover-grey-90:hover {
 /*end-variables sitestylecss*/
  .u-header .u-sheet-1 {min-height: 91px}
 .u-header .u-menu-1 {margin: 33px 0 33px auto}
-.u-header .u-nav-1 {font-size: 1rem; letter-spacing: 0; font-family: Poppins}
+.u-header .u-nav-1 {font-size: 1rem; letter-spacing: 0; font-family: Poppins; font-weight: 700; text-transform: uppercase; background-image: none}
 .u-header .u-sidenav-1 {width: 264px; margin-right: 0; margin-left: 0}
 .u-header .u-menu-close-1 {height: 28px; margin: 20px 20px 0 222px}
 .u-header .u-nav-2 {font-size: 1.25rem; letter-spacing: 0; font-family: Poppins; font-weight: 900} 
@@ -30516,23 +30516,16 @@ a.u-link.u-text-hover-grey-90:hover {
 
 @media (max-width: 575px){ .u-header .u-sidenav-1 {height: 900px}
 .u-header .u-nav-2 {margin-top: 20px; margin-bottom: 0} }
- .u-footer .u-sheet-1 {min-height: 372px}
-.u-footer .u-image-1 {margin: 1px auto 0}
-.u-footer .u-logo-image-1 {max-width: 505px; max-height: 505px}
-.u-footer .u-social-icons-1 {white-space: nowrap; height: 42px; min-height: 16px; width: 166px; min-width: 88px; margin: 20px auto 27px}
+ .u-footer .u-sheet-1 {min-height: 121px}
+.u-footer .u-social-icons-1 {height: 32px; min-height: 16px; width: 116px; min-width: 68px; white-space: nowrap; margin: 45px auto}
 .u-footer .u-icon-1 {height: 100%}
 .u-footer .u-icon-2 {height: 100%}
 .u-footer .u-icon-3 {height: 100%} 
-@media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 359px}
-.u-footer .u-image-1 {width: 505px; height: 40px; margin-top: 1px}
-.u-footer .u-social-icons-1 {width: 166px; margin-bottom: 14px} }
-@media (max-width: 991px){ .u-footer .u-sheet-1 {min-height: 358px}
-.u-footer .u-image-1 {margin-top: 0} }
-@media (max-width: 767px){ .u-footer .u-sheet-1 {min-height: 405px}
-.u-footer .u-image-1 {margin-top: 1px} }
-@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 277px}
-.u-footer .u-image-1 {width: 339px; margin-top: 1px}
-.u-footer .u-logo-image-1 {max-width: 339px; max-height: 339px} }
+@media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 99px}
+.u-footer .u-social-icons-1 {width: 116px} }
+@media (max-width: 991px){ .u-footer .u-sheet-1 {min-height: 76px} }
+@media (max-width: 767px){ .u-footer .u-sheet-1 {min-height: 57px} }
+@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 36px} }
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
