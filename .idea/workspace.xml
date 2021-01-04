@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b21458b-0476-4769-9e06-b186f621cfa4" name="Default Changelist" comment="" />
+    <list default="true" id="9b21458b-0476-4769-9e06-b186f621cfa4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_redirects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,11 +55,31 @@
       <workItem from="1603547853651" duration="183000" />
       <workItem from="1603618725666" duration="495000" />
       <workItem from="1604905408144" duration="2000" />
-      <workItem from="1605559174081" duration="1207000" />
+      <workItem from="1605559174081" duration="1425000" />
+      <workItem from="1606158082938" duration="1000" />
+      <workItem from="1606461484976" duration="1000" />
+      <workItem from="1609755033903" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="441" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609755045598">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="441" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1609755045598" />
   </component>
 </project>
