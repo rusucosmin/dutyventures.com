@@ -1,0 +1,68 @@
+// stylelint-disable property-blacklist, declaration-no-important
+
+//
+// Border
+//
+
+.border         { border: $border-width solid $border-color !important; }
+.border-top     { border-top: $border-width solid $border-color !important; }
+.border-right   { border-right: $border-width solid $border-color !important; }
+.border-bottom  { border-bottom: $border-width solid $border-color !important; }
+.border-left    { border-left: $border-width solid $border-color !important; }
+
+.border-0        { border: 0 !important; }
+.border-top-0    { border-top: 0 !important; }
+.border-right-0  { border-right: 0 !important; }
+.border-bottom-0 { border-bottom: 0 !important; }
+.border-left-0   { border-left: 0 !important; }
+
+//
+// Border sm
+//
+
+.border-sm         { border: $border-width-sm solid $border-color !important; }
+.border-top-sm     { border-top: $border-width-sm solid $border-color !important; }
+.border-right-sm   { border-right: $border-width-sm solid $border-color !important; }
+.border-bottom-sm  { border-bottom: $border-width-sm solid $border-color !important; }
+.border-left-sm   { border-left: $border-width-sm solid $border-color !important; }
+
+//
+// Border md
+//
+
+.border-md         { border: $border-width-md solid $border-color !important; }
+.border-top-md     { border-top: $border-width-md solid $border-color !important; }
+.border-right-md   { border-right: $border-width-md solid $border-color !important; }
+.border-bottom-md  { border-bottom: $border-width-md solid $border-color !important; }
+.border-left-md   { border-left: $border-width-md solid $border-color !important; }
+
+//
+// Border lg
+//
+
+.border-lg         { border: $border-width-lg solid $border-color !important; }
+.border-top-lg     { border-top: $border-width-lg solid $border-color !important; }
+.border-right-lg   { border-right: $border-width-lg solid $border-color !important; }
+.border-bottom-lg  { border-bottom: $border-width-lg solid $border-color !important; }
+.border-left-lg   { border-left: $border-width-lg solid $border-color !important; }
+
+
+//
+// Border xl
+//
+
+.border-xl         { border: $border-width-xl solid $border-color !important; }
+.border-top-xl     { border-top: $border-width-xl solid $border-color !important; }
+.border-right-xl   { border-right: $border-width-xl solid $border-color !important; }
+.border-bottom-xl  { border-bottom: $border-width-xl solid $border-color !important; }
+.border-left-xl   { border-left: $border-width-xl solid $border-color !important; }
+
+
+
+
+
+
+
+
+
+

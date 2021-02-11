@@ -1,0 +1,184 @@
+/*********************
+    button
+*********************/
+
+.btn-primary-soft {
+    background-color: rgba($danger, .10);
+    color: $danger;
+    font-weight: $font-weight-normal;
+    &:hover {
+			background-color: $danger;
+			color: $white;
+    }
+}
+
+.btn-secondary-soft {
+    background-color: rgba($secondary, .10);
+    color: $secondary;
+    font-weight: $font-weight-normal;
+
+    &:hover {
+			background-color: $secondary;
+			color: $white;
+    }
+}
+
+.btn-success-soft {
+    background-color: rgba($success, .10);
+    color: $success;
+    font-weight: $font-weight-normal;
+
+    &:hover {
+			background-color: $success;
+			color: $white;
+    }
+}
+
+.btn-danger-soft {
+    background-color: rgba($danger, .10);
+    color: $danger;
+    font-weight: $font-weight-normal;
+
+    &:hover {
+			background-color: $danger;
+			color: $white;
+    }
+}
+
+.btn-warning-soft {
+    background-color: rgba($warning, .10);
+    color: $warning;
+    font-weight: $font-weight-normal;
+    &:hover {
+			background-color: $warning;
+			color: $white;
+    }
+}
+
+.btn-info-soft {
+    background-color: rgba($info, .10);
+    color: $info;
+    font-weight: $font-weight-normal;
+    &:hover {
+			background-color: $info;
+			color: $white;
+    }
+}
+
+.btn-light-soft {
+    background-color: rgba($light, .10);
+    color: $light;
+    font-weight: $font-weight-normal;
+    &:hover {
+			background-color: $light;
+			color: $dark;
+    }
+}
+
+.btn-dark-soft {
+    background-color: rgba($dark, .10);
+    color: $dark;
+    font-weight: $font-weight-normal;
+    &:hover {
+			background-color: $dark;
+			color: $white;
+    }
+}
+
+
+// btn pills
+.btn-pills {
+    border-radius: 10rem;
+}
+
+
+// btn icon
+.btn-icon.btn-xs {
+  font-size: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn-icon.btn-sm {
+  font-size: 0.8175rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-lg.btn-icon.btn-animation i {
+  font-size: 1.75rem;
+  width: 5rem;
+  height: 5rem;
+  &:after {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+// app btn
+.app-btn a{
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow:$box-shadow;
+  }
+
+}
+
+
+// btn Animation
+.btn-animation i{
+    position: relative;
+    width: 3.125rem;
+    height: 3.125rem;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3.125rem;
+    color: $dange;
+    z-index: 9;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: $white;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+    color: $danger;
+    z-index: -9;
+   
+  }
+
+}
+
+
+.bg-danger.btn-animation i{
+    background: $danger;
+  &:after {
+    background: $danger;
+  }
+
+}
+
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+
+}
+
+
+

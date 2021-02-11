@@ -1,0 +1,136 @@
+/*************************
+       badge
+*************************/
+
+.badge-rounded-circle {
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.40rem;
+    border-radius: 10rem;
+    text-align: center;
+    padding: .1rem;
+}
+
+.badge-rounded-circle >* {
+	margin-left: -1px;
+}
+
+
+.badge-primary-soft {
+    background-color: rgba($primary, .10);
+    color: $primary;
+    font-weight: $font-weight-normal;
+}
+
+.badge-secondary-soft {
+    background-color: rgba($secondary, .10);
+    color: $secondary;
+    font-weight: $font-weight-normal;
+
+}
+
+.badge-success-soft {
+    background-color: rgba($success, .10);
+    color: $success;
+    font-weight: $font-weight-normal;
+
+}
+
+.badge-danger-soft {
+    background-color: rgba($danger, .10);
+    color: $danger;
+    font-weight: $font-weight-normal;
+
+}
+
+.badge-warning-soft {
+    background-color: rgba($warning, .10);
+    color: $warning;
+    font-weight: $font-weight-normal;
+}
+
+.badge-info-soft {
+    background-color: rgba($info, .10);
+    color: $info;
+    font-weight: $font-weight-normal;
+}
+
+.badge-light-soft {
+    background-color: rgba($light, .10);
+    color: $light;
+    font-weight: $font-weight-normal;
+}
+
+.badge-dark-soft {
+    background-color: rgba($dark, .10);
+    color: $dark;
+    font-weight: $font-weight-normal;
+}
+
+
+
+
+
+
+
+a.badge-primary-soft {
+    &:hover {
+            background-color: $primary;
+            color: $white;
+    }
+}
+
+a.badge-secondary-soft {
+
+    &:hover {
+            background-color: $secondary;
+            color: $white;
+    }
+}
+
+a.badge-success-soft {
+
+    &:hover {
+            background-color: $success;
+            color: $white;
+    }
+}
+
+a.badge-danger-soft {
+
+    &:hover {
+            background-color: $danger;
+            color: $white;
+    }
+}
+
+a.badge-warning-soft {
+    &:hover {
+            background-color: $warning;
+            color: $white;
+    }
+}
+
+a.badge-info-soft {
+    &:hover {
+            background-color: $info;
+            color: $white;
+    }
+}
+
+a.badge-light-soft {
+    &:hover {
+            background-color: $light;
+            color: $dark;
+    }
+}
+
+a.badge-dark-soft {
+    &:hover {
+            background-color: $dark;
+            color: $white;
+    }
+}
+
+
+

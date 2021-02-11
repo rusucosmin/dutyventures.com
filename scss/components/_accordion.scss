@@ -1,0 +1,56 @@
+/*************************
+        Accordion
+*************************/
+.accordion .card .card-header{
+	position: relative;
+}
+.accordion .card .card-header button:after {
+    content: "\f067";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-weight: bold;
+    color: $primary;
+    font-size: 14px;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+}
+
+.accordion .card .card-header button.right:after {
+   right: 15px;
+   left: auto;
+   color: $dark;
+}
+
+.accordion .card .card-header button.left:after {
+   left: 0px;
+   right: auto;
+   color: $dark;
+}
+
+.accordion {
+  .card{
+	.card-header {
+		button[aria-expanded=false] {
+      color: $dark;
+			&:after {
+				content: "\f067";
+        color: $dark;
+			}
+
+		}
+
+		button[aria-expanded=true] {
+      color: $primary;
+			&:after {
+				content: "\f00d";
+        color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+}

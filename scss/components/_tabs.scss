@@ -1,0 +1,28 @@
+/*************************
+       nav-tabs
+*************************/
+.nav-tabs {
+	border: none;
+
+	.nav-item {
+		margin: 2px;
+
+		.nav-link {
+			border: none;
+			font-size: 14px;
+			padding: 10px 20px;
+			border-bottom: 3px solid transparent;
+			color: $gray-800;
+			background: $gray-100;
+			border-radius: $border-radius;
+		}
+
+		.nav-link.active {
+			background: $primary;
+			color: $white;
+			border: none;
+		}
+
+	}
+
+}

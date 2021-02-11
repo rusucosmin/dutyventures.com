@@ -1,0 +1,65 @@
+/*********************
+    Sizing
+*********************/
+
+/*** height ***/
+.h-400 {
+	height: 400px;
+}
+
+.h-500 {
+	height: 500px;
+}
+
+.h-600 {
+	height: 600px;
+}
+
+.h-700 {
+	height: 700px;
+}
+
+.h-800 {
+	height: 800px;
+}
+
+@include media-breakpoint-down(lg) {
+	.h-lg-700 {
+		height: 700px;
+	}
+
+	.h-lg-600 {
+		height: 600px;
+	}
+
+	.h-lg-500 {
+		height: 500px;
+	}
+
+}
+
+@include media-breakpoint-down(md) {
+	.h-md-600 {
+		height: 600px;
+	}
+
+	.h-md-500 {
+		height: 500px;
+	}
+
+	.h-md-400 {
+		height: 400px;
+	}
+
+}
+
+@include media-breakpoint-down(sm) {
+	.h-sm-400 {
+		height: 400px;
+	}
+
+	.h-sm-300 {
+	  height: 300px;
+  }
+
+}

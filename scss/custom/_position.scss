@@ -1,0 +1,11 @@
+/*********************
+    sticky-top
+*********************/
+
+.sticky-top {
+  @supports (position: sticky) {
+    position: sticky;
+    top: 120px;
+    z-index: 9;
+  }
+}

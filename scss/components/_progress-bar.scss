@@ -1,0 +1,31 @@
+/*************************
+        Progress Bar
+*************************/
+.progress {
+
+    position: relative;
+    overflow: visible;
+    height: .5rem;
+
+    .progress-bar {
+        border-radius: 50px;
+
+    .progress-bar-title {
+        position: absolute;
+        left: 0;
+        top: -30px;
+        color: $gray-500;
+        font-size: 14px;
+    }
+
+    .progress-bar-number {
+        position: absolute;
+        right: 0;
+        color: $gray-600;
+        top: -30px;
+        font-size: 14px;
+    }
+
+}
+
+}

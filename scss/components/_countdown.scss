@@ -1,0 +1,71 @@
+/*************************
+        Countdown
+*************************/
+
+// countdown
+.countdown {
+	display: inline-block;
+	text-align: center;
+	margin-right: 40px;
+
+	span {
+		font-size: 80px;
+		line-height: 80px;
+		font-weight: 600;
+		color: $primary;
+	}
+
+	p {
+		font-size: 20px;
+		text-transform: capitalize;
+		margin-bottom: 0;
+		color: $gray-800;
+	}
+
+}
+
+.countdown-small {
+	span {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+}
+
+@include media-breakpoint-down(sm) {
+	.countdown {
+		margin-right: 20px;
+
+		span {
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+	}
+
+}
+
+@include media-breakpoint-down(xs){
+	.countdown {
+		margin-right: 10px;
+
+		span {
+			font-size: 30px;
+			line-height: 30px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+	}
+
+}

@@ -1,0 +1,66 @@
+// stylelint-disable declaration-no-important, selector-list-comma-newline-after
+
+//
+// Headings
+//
+
+//
+// Emphasis
+//
+
+// Type display classes
+.display-1 {
+  @include font-size($display1-size);
+  font-weight: $display1-weight;
+  line-height: $display-line-height;
+}
+.display-2 {
+  @include font-size($display2-size);
+  font-weight: $display2-weight;
+  line-height: $display-line-height;
+}
+.display-3 {
+  @include font-size($display3-size);
+  font-weight: $display3-weight;
+  line-height: $display-line-height;
+}
+.display-4 {
+  @include font-size($display4-size);
+  font-weight: $display4-weight;
+  line-height: $display-line-height;
+}
+.display-5 {
+  @include font-size($display5-size);
+  font-weight: $display5-weight;
+  line-height: $display-line-height;
+}
+.display-6 {
+  @include font-size($display6-size);
+  font-weight: $display6-weight;
+  line-height: $display-line-height;
+}
+
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: $font-weight-light;
+}
+
+
+.text-black-10 { color: rgba($black, .1) !important; }
+.text-black-20 { color: rgba($black, .2) !important; }
+.text-black-30 { color: rgba($black, .3) !important; }
+.text-black-40 { color: rgba($black, .4) !important; }
+.text-black-60 { color: rgba($black, .6) !important; }
+.text-black-70 { color: rgba($black, .7) !important; }
+.text-black-80 { color: rgba($black, .8) !important; }
+.text-black-90 { color: rgba($black, .9) !important; }
+.text-white-10 { color: rgba($white, .1) !important; }
+.text-white-20 { color: rgba($white, .2) !important; }
+.text-white-30 { color: rgba($white, .3) !important; }
+.text-white-40 { color: rgba($white, .4) !important; }
+.text-white-60 { color: rgba($white, .6) !important; }
+.text-white-70 { color: rgba($white, .7) !important; }
+.text-white-80 { color: rgba($white, .8) !important; }
+.text-white-90 { color: rgba($white, .9) !important; }

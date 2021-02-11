@@ -1,0 +1,271 @@
+/*********************
+    Header
+*********************/
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.header-transparent {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+}
+
+
+// sticky header
+.header.is-sticky {
+  position: fixed !important;
+  width: 100%;
+  background: $white;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  z-index: 999;
+  // height: 80px;
+  top: 0;
+
+  .header-contact-info {
+    display: none !important;
+  }
+
+  .navbar {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    border-top: none !important;
+    width: 100%;
+  }
+
+}
+
+.header {
+  .dropdown {
+    .dropdown-menu {
+      li {
+        &:hover {
+          a.dropdown-item {
+            color: $primary;
+          }
+        }
+        &:active {
+          a.dropdown-item {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header .dropdown .dropdown-menu li.active a {
+  color: $primary;
+}
+
+
+// header-style-02
+
+.header-style-02, .header-style-03 {
+    transition: all 0.1s ease-in-out;
+  .topbar {
+    padding: 5px 0;
+    .nav {
+      .nav-item{
+      .nav-link {
+        padding: 10px 14px 10px 0px;
+        font-size: 13px;
+        color: $gray-800;
+        font-weight: normal;
+
+        &:hover {
+           color: $primary;
+        }
+
+      }
+       &:last-child {
+           .nav-link {
+          padding-right: 0;
+        }
+        }
+      }
+    }
+  }
+}
+
+
+
+.header-style-02.is-sticky{
+    background: $primary;
+}
+
+.header-style-02.is-sticky .topbar{
+    display: none;
+}
+
+// header-style-03
+
+
+.header-style-03{
+  .topbar{
+    .nav-item{
+      .nav-link{
+        padding-right: 30px;
+        padding-left: 0px;
+      }
+      &:last-child{
+        .nav-link{
+          padding-right: 0px;
+        }
+      }
+    }
+
+  }
+  .navbar{
+    .navbar-brand{
+     margin-right: 100px;
+    }
+    .navbar-collapse{
+      ul{
+        li{
+          margin-right: 15px;
+          .dropdown-toggle{
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-style-03 {
+    transition: all 0.1s ease-in-out;
+  .topbar {
+    padding: 5px 0;
+    .nav {
+      .nav-item{
+      .nav-link {
+        padding: 4px 14px 4px 0px;
+        }
+      }
+    }
+  }
+}
+
+.header-style-03.is-sticky{
+  .topbar{
+    display: none;
+  }
+}
+
+
+//
+// Responsive Media query
+//
+
+@include media-breakpoint-up(lg) {
+  .header {
+    .dropdown-menu {
+      margin: 0px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: none;
+      right: 0;
+      transform: scale(0.9);
+      transition: all 0.4s ease-in-out;
+      transition-property: opacity, visibility, transform;
+      transform-origin: top center;
+      box-shadow: 0 5px 9px rgba(55, 125, 255, 0.075), 0 5px 9px rgba(119, 131, 143, 0.075);
+      visibility: hidden;
+      opacity: 0;
+      display: block !important;
+    }
+
+    .dropdown {
+      &:hover {
+        >.dropdown-menu {
+          transform: scale(1);
+          visibility: visible;
+          opacity: 1;
+          overflow: hidden;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width:1366px) {
+  .header-wrapper:before{
+    right: -90%;
+    }
+  }
+
+@include media-breakpoint-down(md) {
+
+  .header-transparent {
+    position: relative;
+  }
+
+  .navbar-brand {
+    position: relative;
+    z-index: 99;
+  }
+
+  .header {
+    .navbar {
+      .dropdown-menu {
+        .dropdown-item {
+          padding: 10px 15px;
+        }
+
+      }
+
+    }
+
+  }
+
+/* sticky header */
+  .header.is-sticky {
+     .navbar {
+      top: 0;
+      right: 0;
+    }
+
+  }
+
+  .header-style-03{
+    .topbar{
+      display: none;
+    }
+    .navbar{
+      padding: 15px 15px;
+        .navbar-brand{
+          display: block;
+        }
+        .navbar-collapse {
+          padding: 15px;
+        }
+        .navbar-toggler{
+          right: 15px;
+        }
+      }
+  }
+
+  .header .btn{
+      display: none;
+  }
+
+
+}
+
+@include media-breakpoint-down(sm) {
+
+  .header-wrapper:before {
+    position: relative;
+    content: none;
+  }
+
+}

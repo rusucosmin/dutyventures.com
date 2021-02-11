@@ -1,0 +1,19 @@
+/*************************
+        Footer
+*************************/
+
+.footer{
+	li{
+		margin-bottom: 10px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		a{
+			color: $dark;
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+}
+

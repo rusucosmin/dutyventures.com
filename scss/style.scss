@@ -1,0 +1,54 @@
+/*
+
+Template: Soft-x - Landing and Startup Agency Template
+Version: 1.0
+Author: potenzaglobalsolutions
+Design and Developed by: potenzaglobalsolutions.com
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+
+*/
+
+//Bootstrap files
+@import "../libs/bootstrap/scss/functions";
+@import "../libs/bootstrap/scss/mixins";
+@import "../libs/bootstrap/scss/variables";
+
+//Potenza variables
+@import "variables";
+@import "user-variables";
+
+// bootstrap SCSS
+@import "../libs/bootstrap/scss/bootstrap";
+
+// Core files
+@import "core/helpers";
+@import "core/header";
+@import "core/footer";
+
+// Custom bootstrap override components
+@import "custom/alert";
+@import "custom/buttons";
+@import "custom/borders";
+@import "custom/forms";
+@import "custom/navbar";
+@import "custom/sizing";
+@import "custom/type";
+@import "custom/dropdown";
+@import "custom/position";
+
+// components
+@import "components/accordion";
+@import "components/avtar";
+@import "components/bedge";
+@import "components/breadcrumb";
+@import "components/owl-carousel";
+@import "components/tabs";
+@import "components/countdown";
+@import "components/portfolio";
+@import "components/progress-bar";
+
+// user CSS
+@import "user";
+
+

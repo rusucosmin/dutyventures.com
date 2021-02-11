@@ -1,0 +1,84 @@
+/*********************
+    Navbar
+*********************/
+.navbar-brand {
+    img {
+        height: 40px;
+    }
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: $gray-700;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: $white;
+}
+
+.navbar-dark .nav .nav-link {
+    color: $white;
+}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 0.5rem 0rem;
+        height: 65px;
+
+        .navbar-brand{
+        	position: absolute;
+        }
+
+        .nav-link {
+            display: flex;
+
+            i {
+                margin-left: auto;
+            }
+
+        }
+
+    }
+
+    .dropdown-toggle::after {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+    button.navbar-toggler {
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+
+    // header-style-02
+    .header-style-02 button.navbar-toggler {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        border-color: $white;
+    }
+    .header-style-02 .navbar{
+			padding: 15px 15px !important;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 65px;
+        background: $white;
+        z-index: 99;
+        width: 100%;
+        border-top: 1px solid $gray-200;
+        padding: 10px;
+        left: 0;
+        box-shadow: 0 0.75rem 1.5rem rgba(23, 26, 41, 0.05);
+    }
+
+}

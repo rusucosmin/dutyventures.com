@@ -1,0 +1,109 @@
+/*************************
+       Owl Carousel
+*************************/
+.carousel-indicators li{
+  border: 0;
+  width: 10px;
+  height: 10px;
+  background: $dark;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  opacity: 1;
+}
+  .carousel-indicators li.active {
+    background:$primary;
+    width: 25px;
+  }
+
+  .owl-carousel.testimonial {
+  .owl-nav {
+    button.owl-prev {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: 0.5s;
+      background: rgba($primary, 0.75);
+      color: $white;
+      line-height: 3;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50px;
+      opacity: 0;
+    }
+    button.owl-next {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: 0.5s;
+      background: rgba($primary, 0.75);
+      color: $white;
+      line-height: 3;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50px;
+      opacity: 0;
+    }
+  }
+  &:hover {
+    .owl-nav {
+      button.owl-prev {
+        opacity: 1;
+      }
+      button.owl-next {
+        opacity: 1;
+      }
+    }
+  }
+  .owl-prev {
+    left: -15px;
+  }
+  .owl-next {
+    right: -15px;
+  }
+}
+
+.owl-dots{
+  text-align: center;
+  margin-top: 40px;
+  .owl-dot{
+    display: inline-block;
+    zoom: 1;
+    span{
+    width: 10px;
+    height: 10px;
+    margin: 5px 4px;
+    background: $gray-800;
+    display: block;
+    border-radius: 0.50rem;
+    transition: all 0.5s ease-in-out;
+    }
+    &:hover {
+        span {
+          background: $primary;
+        }
+      }
+  }
+  .owl-dot.active {
+      span {
+        background: $primary;
+        width: 25px;
+      }
+    }
+}
+
+@include media-breakpoint-down(md){
+
+ .owl-carousel.testimonial {
+  .owl-prev {
+    left: 0px;
+  }
+  .owl-next {
+    right: 0px;
+  }
+}
+
+}

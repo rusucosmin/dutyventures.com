@@ -1,0 +1,31 @@
+/*************************
+      Forms
+*************************/
+.form-control {
+		padding: 0.8rem 1.1rem;
+}
+
+.bg-dark {
+	.form-control {
+		color: $white;
+		background-color: transparent;
+
+		&:focus {
+			background-color: transparent;
+		}
+
+	}
+
+}
+
+.custom-file{
+
+	.custom-file-label{
+		color: $gray-400;
+	}
+}
+
+.custom-file-label::after{
+	background: $primary;
+	color: $white;
+}
