@@ -66,7 +66,8 @@
       <workItem from="1627292458374" duration="435000" />
       <workItem from="1627369391841" duration="10133000" />
       <workItem from="1627460055681" duration="1739000" />
-      <workItem from="1627893531183" duration="241000" />
+      <workItem from="1627893531183" duration="589000" />
+      <workItem from="1644329844631" duration="4307000" />
     </task>
     <servers />
   </component>
@@ -86,9 +87,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1610208835943">
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644333438908">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1610208835943" />
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-587.-1415.2560.1415@0.0.1440.900" timestamp="1644333438908" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1644331538447">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-587.-1415.2560.1415@0.0.1440.900" timestamp="1644331538447" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1644330364675" />
   </component>
 </project>
