@@ -1,3 +1,4 @@
 # Redirects from what the browser requests to what we serve
 /meet              https://calendly.com/rusucosmin/30min
 /blog              https://blog.dutyventures.com/
+/rails-book        https://dutyventures.com/files/(6th_edition)_Michael_Hartl_-_The_Ruby_on_Rails_Tutorial_(2020).pdf
