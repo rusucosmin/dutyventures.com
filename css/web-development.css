@@ -1,0 +1,181 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Fix for the SVG */
+svg {
+    display: block; /* Prevent extra white space around SVG */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Optional: Ensure large images and sections don't cause overflow */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Apply grayscale effect and transition for the client logos */
+.grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.grayscale:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Ensure that section id clients has a background color and padding */
+#clients {
+    background-color: #f7f8fa;
+    padding: 60px 0;
+}
+
+/* Center and style the badge, title, and subtitle */
+#clients .badge {
+    background: linear-gradient(135deg, #1f2937, #374151); /* Gray 860 to Gray 800 gradient */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+#clients h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#clients p.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Grid layout for client logos */
+#clients .client-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust the minmax value for logo size */
+    gap: 15px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+}
+
+.client-logo {
+    max-width: 100px; /* Adjust for all devices */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Ensure consistent margin and padding for paragraphs */
+.description {
+    margin: 0 0 15px 0; /* Adjust the bottom margin as needed */
+    padding: 0;
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+/* Ensure all columns have the same height and vertical alignment */
+#backend-frontend .row {
+    display: flex;
+}
+
+#backend-frontend .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Container for technology buttons */
+.tech-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust gap between buttons as needed */
+}
+
+/* Style for each technology button */
+.tech-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for a better appearance */
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #111827, #1f2937); /* Gradient from hero section */
+    border-radius: 30px; /* More rounded corners */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.tech-button:hover {
+    background: linear-gradient(to right, #1f2937, #111827); /* Inverted gradient for hover effect */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.tech-button:active {
+    transform: translateY(1px); /* Pressed effect */
+}
+
+
+
+@media (max-width: 767px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Hide horizontal overflow */
+    }
+    
+    /* Adjust Hero Section */
+    #hero {
+        padding: 2rem 1rem; /* Reduce padding */
+    }
+
+    #hero .badge {
+        font-size: 0.8rem; /* Smaller badge text */
+        padding: 0.4rem 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Smaller title */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Smaller subtitle and description */
+        margin-bottom: 1.5rem;
+    }
+
+    /* Services Section Adjustments */
+    #services h2 {
+        font-size: 1.5rem; /* Smaller service titles */
+    }
+
+    #services p {
+        font-size: 1rem; /* Smaller service descriptions */
+    }
+
+    /* Add padding to each column */
+    .col-md-4 {
+        padding: 1rem 1.5rem;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 15px; /* This will make the container responsive */
+    }
+    
+    /* Avoid using 100vw as it can cause overflow issues */
+    .full-width-element {
+        width: 100%; /* Instead of 100vw */
+    }
+    
+    #clients h2 {
+        font-size: 2rem;
+    }
+
+    .client-logo {
+        max-width: 100px;      /* Much smaller size for mobile */
+        margin-bottom: 5px;   /* Further reduce margin on mobile */
+    }
+}
+
