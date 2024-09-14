@@ -117,6 +117,64 @@ svg {
     transform: translateY(1px); /* Pressed effect */
 }
 
+/* Custom Navigation Buttons */
+.custom-prev-btn, .custom-next-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Custom Navigation Buttons */
+.custom-prev-btn, .custom-next-btn {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 20px 25px; /* Bigger padding for larger buttons */
+    border-radius: 50%;
+    font-size: 30px; /* Bigger font size for larger icons */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 999;
+    outline: none; /* Remove focus outline */
+    user-select: none; /* Prevent text selection */
+}
+
+/* Positioning of the buttons */
+.custom-prev-btn {
+    left: -50px; /* Adjust the position further to the left */
+}
+
+.custom-next-btn {
+    right: -50px; /* Adjust the position further to the right */
+}
+
+/* Hover effect for navigation buttons */
+.custom-prev-btn:hover, .custom-next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+
+/* Remove focus outline when buttons are clicked */
+.custom-prev-btn:focus, .custom-next-btn:focus {
+    outline: none; /* Ensure no outline shows on focus */
+}
+
+/* Remove any selection or highlighting when clicked */
+.custom-prev-btn:active, .custom-next-btn:active {
+    background-color: rgba(0, 0, 0, 0.5); /* Keep background consistent when pressed */
+    outline: none;
+    box-shadow: none; /* Remove any click shadows */
+}
+
 
 
 @media (max-width: 767px) {
