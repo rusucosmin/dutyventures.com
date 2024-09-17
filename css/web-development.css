@@ -54,11 +54,13 @@ svg {
 }
 
 /* Grid layout for client logos */
-#clients .client-grid {
+.client-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust the minmax value for logo size */
     gap: 15px; /* Space between items */
+    flex-wrap: wrap;
     justify-items: center; /* Center items horizontally */
+    margin-left: 150px;
 }
 
 .client-logo {
