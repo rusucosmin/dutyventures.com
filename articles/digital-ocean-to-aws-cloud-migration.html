@@ -127,6 +127,27 @@
                 margin-top: 15px;
                 width: auto; /* Adjust width for smaller size */
             }
+            .menu-links {
+                display: grid; /* Switch to grid layout */
+                grid-template-columns: 1fr 1fr; /* Two items per row */
+                gap: 10px; /* Space between grid items */
+            }
+
+            /* Make sure the links take up the grid space nicely */
+            .menu-links a {
+                text-align: center; /* Center text in the grid items */
+                padding: 0.75rem 1rem; /* Adjust padding for mobile */
+                background-color: #1f2937; /* Background color */
+                color: white; /* Text color */
+                border-radius: 8px; /* Slight rounding for a modern look */
+            }
+
+            /* Hover and focus states for better interaction */
+            .menu-links a:hover,
+            .menu-links a:focus {
+                background-color: #3b82f6; /* Blue background on hover */
+                color: white; /* Keep the text color white */
+            }
         }
         
         .nav-item {
@@ -166,7 +187,7 @@
     
                 <!-- Navigation Menu -->
                 <nav id="mobile-menu" class="flex-col flex-grow pb-2 md:pb-0 hidden md:flex md:flex-row md:justify-center md:items-center w-full">
-                    <div class="flex space-x-6 items-center">
+                    <div class="menu-links flex space-x-6 items-center">
                         <a class="px-2 py-1 text-sm font-medium bg-transparent rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline" href="/services/index.html/#portfolio">Portfolio</a>
                         <a class="px-2 py-1 text-sm font-medium bg-transparent rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline" href="/services/index.html/#testimonials">Testimonials</a>
                         <a class="px-2 py-1 text-sm font-medium bg-transparent rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline" href="/services/index.html/#services">Services</a>
