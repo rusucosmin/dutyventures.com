@@ -88,13 +88,53 @@
             animation: fadeInDown 1.2s ease;
         }
 
+        .cta-button {
+            width: auto; /* Auto width to fit the content */
+            background: linear-gradient(135deg, #00c6ff, #0072ff); /* Cool gradient */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            border: none;
+            font-size: 0.8rem; /* Smaller font size */
+            text-align: center;
+            padding: 0.2rem 0.4rem; /* Smaller padding */
+            border-radius: 20px; /* Reduced rounded corners */
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #0072ff, #00c6ff); /* Gradient flip on hover */
+            transform: translateY(-3px); /* Slight lift */
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+        }
+
+        .cta-button:active {
+            transform: translateY(0); /* Reset lift on click */
+        }
+
+        .cta-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Focus state for accessibility */
+        }
+
+
         /* Responsive Design */
         @media screen and (max-width: 768px) {
             .content-grid {
                 grid-template-columns: 1fr;
             }
+            .cta-button {
+                font-size: 1rem; /* Slightly smaller font size on mobile */
+                padding: 0.75rem 1.5rem; /* Reduced padding for smaller screens */
+                margin-top: 15px;
+                width: auto; /* Adjust width for smaller size */
+            }
         }
         
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
         /* Image full width */
         .full-width-image {
             width: 100%;
@@ -115,37 +155,41 @@
                         <img width="120" src="/images/Dutyventures-logo.svg" alt="Duty Ventures Logo">
                     </a>
                     <!-- Mobile Menu Button -->
-                    <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <button id="menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5">
-                            <path x-show="!open" fill-rule="evenodd"
+                            <path fill-rule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                            <path x-show="open" fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414z"
                                 clip-rule="evenodd"></path>
                         </svg>
                     </button>
                 </div>
-
+    
                 <!-- Navigation Menu -->
-                <nav class="flex-col flex-grow pb-2 md:pb-0 hidden md:flex md:flex-row md:justify-center md:items-center w-full">
+                <nav id="mobile-menu" class="flex-col flex-grow pb-2 md:pb-0 hidden md:flex md:flex-row md:justify-center md:items-center w-full">
                     <div class="flex space-x-6 items-center">
                         <a class="px-2 py-1 text-sm font-medium bg-transparent rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline" href="/services/index.html/#portfolio">Portfolio</a>
                         <a class="px-2 py-1 text-sm font-medium bg-transparent rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline" href="/services/index.html/#testimonials">Testimonials</a>
                         <a class="px-2 py-1 text-sm font-medium bg-transparent rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline" href="/services/index.html/#services">Services</a>
                         <a class="px-2 py-1 text-sm font-medium bg-transparent rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline" href="/services/index.html/#contact">Contact</a>
                     </div>
+                    
+                    <!-- Call to Action Button -->
+                    <ul class="ml-1 ml-lg-2 align-self-center flex items-center">
+                        <li class="nav-item pl-2">
+                            <a href="/services/index.html/#contact">
+                                <button class="cta-button inline-flex font-weight-bold text-white text-lg py-3 px-6 rounded-full shadow-lg transition-transform">
+                                    Get a FREE Consulting Call
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-
-                <!-- Consulting Call Button -->
-                <a href="/services/index.html/#contact" class="mt-2 md:mt-0">
-                    <button class="inline-flex font-weight-bold text-white text-sm py-2 px-3 bg-primary rounded hover:bg-primary-dark w-48">
-                        Get a FREE Consulting Call
-                    </button>
-                </a>
             </div>
         </div>
     </header>
+    
+    
+    
 
     <!-- Wave SVG with Gradient (Left to Right) -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -209,5 +253,14 @@
     <footer>
         <p>&copy; 2024 Duty Ventures. All Rights Reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>    
 </body>
 </html>
