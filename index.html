@@ -39,34 +39,6 @@
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/style/tailwind.css" />
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
-        <script>
-              $(document).ready(function(){
-                  // Add smooth scrolling to all links
-                  $("a").on('click', function(event) {
-
-                      // Make sure this.hash has a value before overriding default behavior
-                      if (this.hash !== "") {
-                          // Prevent default anchor click behavior
-                          event.preventDefault();
-
-                          // Store hash
-                          var hash = this.hash;
-
-                          // Using jQuery's animate() method to add smooth page scroll
-                          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                          $('html, body').animate({
-                              scrollTop: $(hash).offset().top
-                          }, 800, function(){
-
-                              // Add hash (#) to URL when done scrolling (default click behavior)
-                              window.location.hash = hash;
-                          });
-                      } // End if
-                  });
-              });
-        </script>
-        
   </head>
 
   <body>
@@ -77,11 +49,14 @@
                 <div class="p-4 flex flex-row items-center justify-between">
                     <a href="/index.html"><img width="150" src="images/Dutyventures-logo.svg" alt="Dutyventures-logo" loading="lazy"></a>
                     <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        <svg x-bind:class="open ? 'hidden' : 'block'" fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                         </svg>
+                        <svg x-bind:class="open ? 'block' : 'hidden'" fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>                        
                     </button>
+                    
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-2 md:pb-0 hidden md:flex md:justify-end md:flex-row">
                     <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="index.html/#portfolio">Portfolio</a>
@@ -105,13 +80,13 @@
     <!--================================= navigation end -->
 
     <!--================================= header start-->
-    <section class="bg-light pt-lg-0 pb-lg-0 pb-0 position-relative bg-white-right-half-30">
+    <section class="bg-light pt-lg-0 pb-lg-0 pb-0 position-relative ">
         <div class="container">
             <div class="row align-items-center py-md-5">
                 <div class="col-lg-5">
                     <div class="position-relative">
                         <div>
-                            <img class="img-fluid position-relative" src="images/head.svg" alt="Dutyventures-logo" loading="lazy" width="700" height="550">
+                            <img class="img-fluid position-relative" src="images/head.optimized.svg" alt="Dutyventures-logo" loading="lazy" width="700" height="550">
                         </div>
                     </div>
                 </div>
@@ -1100,7 +1075,7 @@
 
 
     <!--================================= footer end-->
-
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="/libs/popper/popper.min.js"></script>
     <script src="/libs/bootstrap/bootstrap.min.js"></script>
@@ -1109,6 +1084,33 @@
     <script src="/libs/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="/libs/magnific-popup/js/jquery.magnific-popup.min.js"></script>
     <script src="/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" ></script>
+        <script>
+              $(document).ready(function(){
+                  // Add smooth scrolling to all links
+                  $("a").on('click', function(event) {
+
+                      // Make sure this.hash has a value before overriding default behavior
+                      if (this.hash !== "") {
+                          // Prevent default anchor click behavior
+                          event.preventDefault();
+
+                          // Store hash
+                          var hash = this.hash;
+
+                          // Using jQuery's animate() method to add smooth page scroll
+                          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                          $('html, body').animate({
+                              scrollTop: $(hash).offset().top
+                          }, 800, function(){
+
+                              // Add hash (#) to URL when done scrolling (default click behavior)
+                              window.location.hash = hash;
+                          });
+                      } // End if
+                  });
+              });
+        </script>
     <script>
     window.addEventListener("DOMContentLoaded", function() {
         // get the form elements defined in your form HTML above
